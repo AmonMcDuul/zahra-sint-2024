@@ -1,0 +1,68 @@
+<div class="main-container">
+    @if(state == 0){
+        <div class="score-container">Score: {{score}} / {{maxScore}}</div>
+        @if(sectionOne){
+            <div class="gedicht-container">
+                <p>
+                  Dit jaar was het een grote verandering voor jou,<br />
+                  Verhuizen van Steenbergen naar Lepelstraat, tjongejonge, wat een gedoe,
+                  wauw!<br />
+                  Dozen sjouwen, spullen pakken, o wat een feest,<br />
+                  Maar nu ben je gesetteld, met de verhuisstress geweest.
+                </p>
+              </div>
+              <div class="vraag-container">
+                <div class="vraag">Is dit een echte vraag of een neppe vraag?</div>
+                <div class="antwoorden">
+                  <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Een echte</button>
+                  <button class="antwoorden-button" (click)="setGoodAnswerTrue()">Een neppe</button>
+                  <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Ik weet niet</button>
+                  <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Een stomme vraag dit</button>
+                </div>
+                <div class="submit">
+                  <button class="submit-button" (click)="onSubmit(1)">Submit antwoord</button>
+                </div>
+            </div>
+        }
+        @if(sectionTwo){
+            <div class="gedicht-container">
+                <p>
+                  Dit jaar was het een grote verandering voor jou,<br />
+                  Verhuizen van Steenbergen naar Lepelstraat, tjongejonge, wat een gedoe,
+                  wauw!<br />
+                  Dozen sjouwen, spullen pakken, o wat een feest,<br />
+                  Maar nu ben je gesetteld, met de verhuisstress geweest.
+                </p>
+              </div>
+              <div class="vraag-container">
+                <div class="vraag">Is dit een echte vraag of e vraag?</div>
+                <div class="antwoorden">
+                  <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Een echte</button>
+                  <button class="antwoorden-button" (click)="setGoodAnswerTrue()">Een neppe</button>
+                  <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Ik weet niet</button>
+                  <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Een stomme vraag dit</button>
+                </div>
+                <div class="submit">
+                  <button class="submit-button" (click)="onSubmit(2)">Submit antwoord</button>
+                </div>
+            </div>
+        }
+        @if(sectionThree){
+    
+        }
+        @if(sectionFour){
+    
+        }
+        @if(sectionFive){
+    
+        }
+    }
+    @else if(state == 1){
+        <div class="goed-container">GOED!</div>
+        <button class="volgende-button"  (click)="nextRound()">Ga verder</button>
+    }
+    @else if(state == 2){
+        <div class="fout-container">FOUT!</div>
+        <button class="volgende-button" (click)="retryRound()">Probeer opnieuw</button>
+    }
+</div>

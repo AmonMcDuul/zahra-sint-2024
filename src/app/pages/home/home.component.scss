@@ -1,0 +1,99 @@
+// Sinterklaas Theme Colors
+$red: #a30000;
+$gold: #d4af37;
+$dark-blue: #0a2f5a;
+$white: #ffffff;
+$off-white: #efefbb;
+
+.main-container {
+  background-color: $off-white;
+  border-top: 5px solid $dark-blue;
+  border-bottom: 5px solid $dark-blue;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.score-container {
+  font-size: 20px;
+  font-weight: bold;
+  color: $dark-blue;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gedicht-container {
+  background-color: $gold;
+  color: $dark-blue;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.vraag-container {
+  background-color: $white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vraag {
+  font-size: 18px;
+  font-weight: bold;
+  color: $dark-blue;
+  margin-bottom: 15px;
+}
+
+.antwoorden {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.antwoorden-button {
+  background-color: $red;
+  color: $white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+
+  &:hover {
+    background-color: darken(#13b618, 5%);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    background-color: lighten(#13b618, 5%);
+    transform: translateY(0);
+  }
+}
+
+.submit {
+  margin-top: 10px;
+}
+
+.submit-button {
+  background-color: $dark-blue;
+  color: $white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:active {
+    background-color: lighten(#13b618, 5%);
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../styles.scss';
+
+.header-container {
+    height: 100px;
+    background-color: #d43737;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
