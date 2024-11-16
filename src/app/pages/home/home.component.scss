@@ -30,7 +30,7 @@ $off-white: #efefbb;
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .vraag-container {
@@ -96,4 +96,24 @@ $off-white: #efefbb;
   &:active {
     background-color: lighten(#13b618, 5%);
   }
+}
+
+.goed-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #a30000;
+    gap: 50px;
+    padding: 100px;
+}
+
+.fout-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: blue;
+    gap: 50px;
+    padding: 100px;
 }

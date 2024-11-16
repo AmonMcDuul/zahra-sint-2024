@@ -13,8 +13,13 @@ export class HomeComponent {
   sectionThree: Boolean = false;
   sectionFour: Boolean = false;
   sectionFive: Boolean = false;
+  sectionSix: Boolean = false;
+  sectionSeven: Boolean = false;
+  sectionEight: Boolean = false;
+  sectionNine: Boolean = false;
+
   score: number = 0;
-  maxScore: number = 10;
+  maxScore: number = 8;
   goodAnswer: Boolean = false;
   state: number = 0
 
@@ -37,6 +42,11 @@ export class HomeComponent {
     this.sectionThree = false;
     this.sectionFour = false;
     this.sectionFive = false;
+    this.sectionSix = false;
+    this.sectionSeven = false;
+    this.sectionEight = false;
+    this.sectionNine = false;
+
 
     switch (round) {
       case 1:
@@ -53,6 +63,18 @@ export class HomeComponent {
         break;
       case 5:
         this.sectionFive = true;
+        break;
+      case 6:
+        this.sectionSix = true;
+        break;
+      case 7:
+        this.sectionSeven = true;
+        break;
+      case 8:
+        this.sectionEight = true;
+        break;
+      case 9:
+        this.sectionNine = true;
         break;
       default:
     }
