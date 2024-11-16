@@ -1,52 +1,58 @@
 // Sinterklaas Theme Colors
 $red: #a30000;
-$gold: #d4af37;
-$dark-blue: #0a2f5a;
+$gold: #efe33b;
+$gold-transparent: #d4af3779;
+$dark-blue: #006cc5;
 $white: #ffffff;
 $off-white: #efefbb;
 
 .main-container {
-  background-color: $off-white;
-  border-top: 5px solid $dark-blue;
-  border-bottom: 5px solid $dark-blue;
   padding: 20px;
   max-width: 600px;
   margin: 30px auto;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .score-container {
-  font-size: 20px;
+  background-color: $gold;
+  font-size: 28px;
   font-weight: bold;
-  color: $dark-blue;
+  color: black;
   margin-bottom: 20px;
   text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .gedicht-container {
-  background-color: $gold;
-  color: $dark-blue;
+  background-color: $off-white;
+  color: black;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-size: 18px;
+  border: solid black 1px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .vraag-container {
-  background-color: $white;
+  background-color: $off-white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: solid black 1px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .vraag {
   font-size: 18px;
   font-weight: bold;
-  color: $dark-blue;
+  color: black;
   margin-bottom: 15px;
 }
 
@@ -91,24 +97,31 @@ $off-white: #efefbb;
   color: $white;
   font-size: 16px;
   padding: 10px 20px;
-  border: none;
+  border: solid black 1px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s;
-
+  width: 100%;
   &:active {
     background-color: lighten(#13b618, 5%);
   }
 }
-
 .goed-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: #a30000;
     gap: 50px;
     padding: 100px;
+    background-color: #eafdd8;
+    color: $dark-blue;
+    border-radius: 10px;
+    border: solid black 1px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-image: url('https://i.ibb.co/S0vPjTZ/sintduim-removebg-preview.png');
+    background-size: cover; 
+    background-position: center; 
+    height: 150px;
 }
 
 .fout-container{
@@ -116,7 +129,51 @@ $off-white: #efefbb;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: blue;
     gap: 50px;
-    padding: 100px;
+    padding: 80px;
+    background-color: #ffe8dd;
+    color: $dark-blue;
+    border-radius: 10px;
+    border: solid black 1px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-image: url('https://i.ibb.co/0hFK9cc/sintduim-removebg-preview.png');
+    background-size: cover; 
+    background-position: center; 
+    height: 150px;
 }
+
+.finish-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 100px;
+  background-color: #eafdd8;
+  color: $dark-blue;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-image: url('https://i.ibb.co/B4Yhcgd/sintduim-removebg-preview.png');
+  background-size: cover; 
+  background-position: center; 
+  height: 150px;
+}
+
+.animate {
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

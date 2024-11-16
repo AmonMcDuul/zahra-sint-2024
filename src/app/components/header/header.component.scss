@@ -2,10 +2,12 @@
 
 .header-container {
     height: 100px;
-    background-color: #d43737;
+    background-color: #c80000;
     color: #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    border-bottom: solid black 1px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }

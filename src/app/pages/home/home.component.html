@@ -1,16 +1,16 @@
 <div class="main-container">
     @if(state == 0){
-        <div class="score-container">Score: {{score}} / {{maxScore}}</div>
+        <div class="score-container animate">Score: {{score}} / {{maxScore}}</div>
         @if(sectionOne){
-            <div class="gedicht-container">
+            <div class="gedicht-container animate">
                 <p>
-                    Welkom bij de grote Zahra de Vriend surprise-quiz,<br>
+                    Welkom bij de grote surprise-quiz,<br>
                     Deze heeft de Sint special voor jou gemaakt, helemaal gratis.<br>
                     Beantwoord de vragen en speel een nieuw stukje gedicht vrij,<br>
                     Heb je alles goed, win je de cadeaus, en ben je hopelijk blij!
                 </p>
               </div>
-              <div class="vraag-container">
+              <div class="vraag-container animate">
                 <div class="vraag">Een inkomertje: <br>Is dit een echte vraag of een neppe vraag?</div>
                 <div class="antwoorden">
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Een neppe vraag</button>
@@ -18,21 +18,21 @@
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Ik weet niet wat dit is</button>
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Een stomme vraag</button>
                 </div>
-                <div class="submit">
+                <div class="submit animate">
                   <button class="submit-button" (click)="onSubmit(1)">Submit antwoord</button>
                 </div>
             </div>
         }
         @if(sectionTwo){
-            <div class="gedicht-container">
+            <div class="gedicht-container animate">
                 <p>
                     Wat een jaar was het voor jou, vol veranderingen groot en klein,<br>
-                    Een nieuw huisje in Lepelstraat, bij je moeder, Jocelijn.<br>
+                    Een nieuw tweede huisje in Lepelstraat, bij je moeder, Jocelijn.<br>
                     Dozen inpakken, tillen, en sjouwen maar,<br>
                     Maar nu ben je gesetteld, dat is helemaal klaar.
                 </p>
               </div>
-              <div class="vraag-container">
+              <div class="vraag-container animate">
                 <div class="vraag">Hoeveel mensen wonen er ongeveer in lepelstraat</div>
                 <div class="antwoorden">
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">3000</button>
@@ -40,21 +40,21 @@
                   <button class="antwoorden-button" (click)="setGoodAnswerTrue()">2000</button>
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">1500</button>
                 </div>
-                <div class="submit">
+                <div class="submit animate">
                   <button class="submit-button" (click)="onSubmit(2)">Submit antwoord</button>
                 </div>
             </div>
         }
         @if(sectionThree){
-            <div class="gedicht-container">
+            <div class="gedicht-container animate">
                 <p>
                   Je hebt je middelbare school met succes afgerond,<br>
                   En bent begonnen aan een nieuwe opleiding, hoe gezond!<br>
-                  Pedagogisch medewerker, dat is jouw nieuwe pad,<br>
-                  Een keuze waar je hart sneller van gaat, dat is wat je had.<br>
+                  Pedagogisch medewerker is jouw nieuwe missie,<br>
+                  En zo te zien heb je daarin best wel veel ambitie.<br>
                 </p>
               </div>
-              <div class="vraag-container">
+              <div class="vraag-container animate">
                 <div class="vraag">Wat betekent pedagogiek?</div>
                 <div class="antwoorden">
                   <button class="antwoorden-button" (click)="setGoodAnswerTrue()">Opvoedkunde</button>
@@ -62,21 +62,21 @@
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Zorgen voor anderen</button>
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Opleiden</button>
                 </div>
-                <div class="submit">
+                <div class="submit animate">
                   <button class="submit-button" (click)="onSubmit(3)">Submit antwoord</button>
                 </div>
             </div>
         }
         @if(sectionFour){
-            <div class="gedicht-container">
+            <div class="gedicht-container animate">
                 <p>
                   En dus sta je nu af en toe in de peuterspeelzaal en kleuterklas,<br>
                   Kleine handjes helpen, hopelijk ben je hiermee echt in je sas!<br>
-                  liedjes zingen, knutselen en verhalen voorlezen hopelijk is het tof,<br>
+                  liedjes zingen, knutselen en verhalen voorlezen, het is vast tof,<br>
                   En nu dus moet je aan de bak en werken, maar daarna een welverdiend verlof.
                 </p>
               </div>
-              <div class="vraag-container">
+              <div class="vraag-container animate">
                 <div class="vraag">Wanneer ben je een kleuter?</div>
                 <div class="antwoorden">
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">3 tot 5 jaar</button>
@@ -84,13 +84,13 @@
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">2 tot 4 jaar</button>
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">4 tot 12 jaar</button>
                 </div>
-                <div class="submit">
+                <div class="submit animate">
                   <button class="submit-button" (click)="onSubmit(4)">Submit antwoord</button>
                 </div>
             </div>
         }
         @if(sectionFive){
-            <div class="gedicht-container">
+            <div class="gedicht-container animate">
                 <p>
                   En oh ja, die arme hond... Die wil ook wel eens naar buiten,<br>
                   Maar Zahra denkt dan soms: “Ach nee, laat hem lekker fluiten!”<br>
@@ -98,7 +98,7 @@
                   Wil jij liever op de bank, met Netflix en een dekentje toe.
                 </p>
               </div>
-              <div class="vraag-container">
+              <div class="vraag-container animate">
                 <div class="vraag">Welk eiland is vernoemd naar het hondenras?</div>
                 <div class="antwoorden">
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Terschelling</button>
@@ -106,13 +106,13 @@
                   <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Galapagos eilanden</button>
                   <button class="antwoorden-button" (click)="setGoodAnswerTrue()">Kanarische eilanden</button>
                 </div>
-                <div class="submit">
+                <div class="submit animate">
                   <button class="submit-button" (click)="onSubmit(5)">Submit antwoord</button>
                 </div>
             </div>
         }
         @if(sectionSix){
-          <div class="gedicht-container">
+          <div class="gedicht-container animate">
               <p>
                 Soms ook een beetje mot met je broeder en moeder,<br>
                 Maar je moeder, of moederloeder, blijft wel je voeder.<br>
@@ -120,29 +120,29 @@
                 Dan blijven alle problemen en discussies ook altijd bespreekbaar.
               </p>
             </div>
-            <div class="vraag-container">
-              <div class="vraag">hoeveel familie familieleden heb je?</div>
+            <div class="vraag-container animate">
+              <div class="vraag">Hoe oud is je moeder?</div>
               <div class="antwoorden">
-                <button class="antwoorden-button" (click)="setGoodAnswerFalse()">16</button>
-                <button class="antwoorden-button" (click)="setGoodAnswerFalse()">17</button>
-                <button class="antwoorden-button" (click)="setGoodAnswerTrue()">18</button>
-                <button class="antwoorden-button" (click)="setGoodAnswerFalse()">19</button>
+                <button class="antwoorden-button" (click)="setGoodAnswerFalse()">38</button>
+                <button class="antwoorden-button" (click)="setGoodAnswerTrue()">39</button>
+                <button class="antwoorden-button" (click)="setGoodAnswerFalse()">40</button>
+                <button class="antwoorden-button" (click)="setGoodAnswerFalse()">49</button>
               </div>
-              <div class="submit">
+              <div class="submit animate">
                 <button class="submit-button" (click)="onSubmit(6)">Submit antwoord</button>
               </div>
           </div>
       }
       @if(sectionSeven){
-        <div class="gedicht-container">
+        <div class="gedicht-container animate">
             <p>
               En gisteren even ontspannen met je vriendinnen,<br>
               Lekker bowlen, dat moest je wel winnen!<br>
               En als je niet bowlt of stage loopt, dan ben je creatief,<br>
-              Nog even en je komt bij een kunstenaarsinitiatief.
+              Nog even en je komt vast bij een kunstenaarsinitiatief.
             </p>
           </div>
-          <div class="vraag-container">
+          <div class="vraag-container animate">
             <div class="vraag">Hoeveel punten kan je maximaal scoren met bowlen?</div>
             <div class="antwoorden">
               <button class="antwoorden-button" (click)="setGoodAnswerFalse()">150</button>
@@ -150,13 +150,13 @@
               <button class="antwoorden-button" (click)="setGoodAnswerFalse()">250</button>
               <button class="antwoorden-button" (click)="setGoodAnswerTrue()">300</button>
             </div>
-            <div class="submit">
+            <div class="submit animate">
               <button class="submit-button" (click)="onSubmit(7)">Submit antwoord</button>
             </div>
         </div>
     }
     @if(sectionEight){
-      <div class="gedicht-container">
+      <div class="gedicht-container animate">
           <p>
             En op je lijstje stond parfum van Katy Perry,<br>
             Een geur die zo zoet is, maar ook zo merry.<br>
@@ -164,7 +164,7 @@
             Dan kan je vanaf nu, ruikend naar Katy Perry, rondlopen.
           </p>
         </div>
-        <div class="vraag-container">
+        <div class="vraag-container animate">
           <div class="vraag">Hoe heet Katy Perry echt?</div>
           <div class="antwoorden">
             <button class="antwoorden-button" (click)="setGoodAnswerTrue()">Katheryn Elizabeth Hudson</button>
@@ -172,32 +172,32 @@
             <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Cherilyn Sarkisian LaPiere</button>
             <button class="antwoorden-button" (click)="setGoodAnswerFalse()">Cornelis Willem Heuckeroth</button>
           </div>
-          <div class="submit">
+          <div class="submit animate">
             <button class="submit-button" (click)="onSubmit(8)">Submit antwoord</button>
           </div>
       </div>
   }
   @if(sectionNine){
-    <div class="gedicht-container">
+    <div class="gedicht-container animate">
         <p>
           Het is je gelukt! je hebt een maximale score behaald,<br>
           Verder geen vragen meer, die heeft de Sint eruit gehaald. <br>
           Gefeliciteerd met het winnen van de quiz, maak je cadeaus maar open<br>
           Hopelijk heeft de sint, het goede lopen kopen.
         </p>
-    </div>
-}
+      </div>
+      <div class="finish-container animate"></div>
+  }
     }
     @else if(state == 1){
-        <div class="goed-container">
-            <h1>Goed!</h1> 
-            <button class="submit-button"  (click)="nextRound()">Ga verder</button>
+        <div class="goed-container animate">
         </div>
+        <button class="submit-button"  (click)="nextRound()">Ga verder</button>
+
     }
     @else if(state == 2){
-        <div class="fout-container">
-            <h1>Fout!</h1>
-            <button class="submit-button" (click)="retryRound()">Probeer opnieuw</button>
+        <div class="fout-container animate">
         </div>
+        <button class="submit-button" (click)="retryRound()">Probeer opnieuw</button>
     }
 </div>
