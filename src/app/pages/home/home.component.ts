@@ -83,8 +83,9 @@ export class HomeComponent {
   onSubmit(round: number){
     if(this.goodAnswer){
       this.state = 1;
-      this.setRound(round + 1);
       this.score++;
+      this.setGoodAnswerFalse();
+      this.setRound(round + 1);
     }
     else{
       this.state = 2;
